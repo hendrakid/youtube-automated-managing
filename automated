@@ -1,0 +1,27 @@
+// this used for delete all video on playlist
+// from this guy github.com/timothyarmstrong
+(function() {
+  var i = window.setInterval(function() {
+    var closeButton = document.querySelector('.pl-video-edit-remove');
+    if (closeButton) {
+      closeButton.click();
+    } else {
+      window.clearInterval(i);
+    }
+  }, 500);
+})();
+
+ 40
+
+
+$(function() {
+var x=100;//video count
+  for(var i=0; i<c; i++;){
+      var e = $.Event('keypress');
+      e.which = 32; // Space
+      $('item').trigger(e);
+      var x = $.Event('keypress');
+      x.which = 40; // arow key down
+      $('item').trigger(x);
+  }
+});
